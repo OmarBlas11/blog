@@ -3,7 +3,7 @@
 @section('title', 'BlasLoarte')
 
 @section('content_header')
-    <h1>Lista de Usuarios</h1>
+    <h1>Lista de Usuarios Updating Laravel 9</h1>
 @stop
 
 @section('content')
