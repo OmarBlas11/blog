@@ -44,10 +44,10 @@
                 </x-jet-button>
             </div>
         </form>
-        <div class="flex flex-col justify-center items-center">
+        {{-- <div class="flex flex-col justify-center items-center">
             <a href="{{ url('login/facebook') }}"><button class="bg-blue-500 my-1 md:w-80 hover:bg-blue-600 w-60 active:bg-blue-700 focus:outline-none focus:ring focus:ring-violet-300 p-2 rounded-2xl shadow-2xl"><span><i class="fa-brands fa-facebook fa-xl text-red-700"></i></span>Iniciar sesión con facebook</button></a>
             <a href="{{ url('login/google') }}"><button class="bg-red-500 my-1 md:w-80 hover:bg-red-600 w-60 active:bg-red-700 focus:outline-none focus:ring focus:ring-violet-300 p-2 rounded-2xl shadow-2xl"><span><i class="fa-brands fa-google fa-xl text-red-700"></i></span>Iniciar sesión con google</button></a>
-        </div>
+        </div> --}}
 
     </x-jet-authentication-card>
 </x-guest-layout>
