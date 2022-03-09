@@ -7,6 +7,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>{{ config('app.name', 'Laravel') }}</title>
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
@@ -32,8 +33,6 @@
 
 
     @livewireStyles
-    <script src="https://kit.fontawesome.com/c61b03652e.js" crossorigin="anonymous"></script>
-
     <!-- Scripts -->
     <script src="{{ mix('js/app.js') }}" defer></script>
 </head>
