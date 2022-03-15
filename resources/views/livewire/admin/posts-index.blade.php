@@ -6,9 +6,17 @@
 <div class="card">
     <div class="card-header">
         <div class="form-group mx-sm-3 mb-2">
+            {{$search}} gola
+        </div>
+        
+    </div>
+    <div class="card-header">
+        <div class="form-group mx-sm-3 mb-2">
             <input wire:model="search" class="form-control" placeholder="Buscar posts">
         </div>
+        
     </div>
+    
     @if ($posts->count())
         <div class="card-body table-responsive">
             <table class="table table-striped">
@@ -52,3 +60,5 @@
         </div>
     @endif
 </div>
+
+

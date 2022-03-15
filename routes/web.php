@@ -34,5 +34,5 @@ Route::get('login/{driver}', function ($driver) {
  
 Route::get('login/{driver}/callback', function ($driver) {
         $user = Socialite::driver($driver)->user();
-    dd($user);
+        dd($user);
 });

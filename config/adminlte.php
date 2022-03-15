@@ -353,6 +353,24 @@ return [
             'active' => ['admin/posts/create'],
             'can'   => 'admin.posts.create'
         ],
+        ['header' => 'GUARDAR VENTAS'],
+        
+        [
+            'text'       => 'Lista de Post',
+            'icon_color' => 'white',
+            'route'        => 'admin.posts.index',
+            'icon'         =>'fas fa-fw fa-clipboard',
+            'active' => ['admin/posts/index'],
+            'can'   => 'admin.posts.index'
+        ],
+        [
+            'text'       => 'Crear Nuevo Post',
+            'icon_color' => 'yellow',
+            'route'        => 'admin.posts.create',
+            'icon'         =>'fas fa-fw fa-file',
+            'active' => ['admin/posts/create'],
+            'can'   => 'admin.posts.create'
+        ],
         /* [
             'text'       => 'information',
             'icon_color' => 'cyan',

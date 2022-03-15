@@ -13,7 +13,7 @@ class Tag extends Model
 
     public function getRouteKeyName()
     {
-        return "slug";   
+        return "slug";
     }
 
     //Relacion  muchos a muchos

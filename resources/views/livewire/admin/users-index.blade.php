@@ -1,5 +1,6 @@
 <div>
     <div class="card">
+        {{$search}}
         <div class="card-header">
             <div class="row form-inline">
                 <div class="col-7">
