@@ -53,7 +53,7 @@ class PostController extends Controller
     public function store(StorePostRequest $request)
     {
         /* $url=Storage::put('public/posts', $request->file('file'));
-       $total=substr($url, 7);
+        $total=substr($url, 7);
        return $total; */
 
         $post = Post::create($request->all());

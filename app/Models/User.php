@@ -70,4 +70,14 @@ class User extends Authenticatable
     {
         return $this->hasMany(SocialProfile::class);
     }
+
+    public function adminlte_image()
+    {
+        $social_profile = $this->socialProfiles()->first();
+        if ($social_profile) {
+            return $social_profile->social_avatar;
+        }else{
+        return 'https://www.cinemascomics.com/wp-content/uploads/2019/05/fat-thor-1.jpg';
+        }
+    }
 }
