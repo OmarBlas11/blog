@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\LoginController;
 use App\Http\Controllers\PostController;
 use App\Models\User;
 use Illuminate\Support\Facades\Route;
@@ -27,12 +28,7 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 })->name('dashboard');
 
 
- 
-Route::get('login/{driver}', function ($driver) {
-    return Socialite::driver($driver)->redirect();
-});
- 
-Route::get('login/{driver}/callback', function ($driver) {
-        $user = Socialite::driver($driver)->user();
-        dd($user);
-});
+
+Route::get('login/{driver}', [LoginController::class, 'redirect']);
+
+Route::get('login/{driver}/callback', [LoginController::class, 'user']);

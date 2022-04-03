@@ -17,6 +17,9 @@ return new class extends Migration
             $table->id();
             $table->unsignedBigInteger('user_id');
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+            $table->string('social_id')->unique();
+            $table->string('social_name');
+            $table->string('social_avatar');
             $table->timestamps();
         });
     }
